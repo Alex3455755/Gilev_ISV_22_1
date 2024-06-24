@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.content {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #0083e8;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    color: white;
+    position: relative;
+    background: url(img/8.png);
+    background-position: center;
+    display: flex;
+}
+
+.info {
+    margin-left: 30px;
+}
+.info > h2{
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #37c257;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button p{
+    font-size: 20px;
+}
+.button img{
+    width: 20%;
+}
+.imges{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.imges img{
+    width: 75%;
+    height: 75%;
+}
+.profil div{
+    width: 50%;
+}
+.label {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+    grid-template-areas: 
+    "one two"
+    "three two"
+    "three four";
+}
+
+.photo_card {
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(194, 194, 194);
+    position: relative;
+}
+
+.photo_card img {
+    width: 100%;
+    display: block;
+}
+
+.card_info {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.one {
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+}
+
+.likes span {
+    margin-right: 5px;
+}
+.photo_card:nth-child(4) {
+    height: 100px;
+    background: url(img/21.png) white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
