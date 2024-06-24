@@ -1,0 +1,159 @@
+.card{
+    width: 300px;
+    height: 460px;
+    border: 2px solid #17ff02;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price span{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 25px;
+}
+.img{
+    background: url(img/boots.jpg);
+    height: 55%;
+    background-size: cover;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.label{
+    display: inline-block;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale{
+    background: rgb(255, 102, 0);
+    padding: 10px;
+}
+.new{
+    background: #17ff02;
+    padding: 10px;
+}
+.price .new_price{
+    text-decoration: none;
+    color: red;
+    margin-left: 38px;
+}
+.midlle_card{
+    display: flex;
+    justify-content: space-between;
+}
+.rating{
+    display: inline-block;
+    font-size: 0;
+}
+.rating span{
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgray;
+}
+.rating > span::before{
+    content: '★';
+}
+.rating > span.active{
+    color: gold;
+}
+.text span{
+    color: gray;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: 70%;
+    border: 2px solid rgb(3, 211, 3);
+    color: rgb(3, 211, 3);
+    background: none;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.heart{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+.heart img{
+    width: 100%;
+}
+.heart:hover{
+    border: none;
+    background-color: rgb(255, 102, 0);
+}
+.btn:hover{
+    background-color: rgb(3, 211, 3);
+    color: white;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 80%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background: rgb(3, 211, 3);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header .logo{
+    height: 100px;
+    width: 100px;
+    background: url(img/2644777.png);
+    background-size: cover;
+}
+header h1{
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+header ul li a{
+    display: block;
+    background: rgb(3, 211, 3);
+    padding: 10px;
+    margin: 30px 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+header ul li a:hover{
+    background: rgb(3, 211, 3);
+}
+main{
+    margin-top: 30px;
+}
